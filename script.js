@@ -78,6 +78,7 @@ function calculateScore(event) {
     let score = 0;
     const review = [];
 
+    // Use the selected 20 questions for review and score calculation
     questions.slice(0, 20).forEach((q, index) => {
         const selectedAnswer = form[`q${index}`]?.value;
         if (selectedAnswer === q.answer) {
@@ -87,7 +88,8 @@ function calculateScore(event) {
         }
     });
 
-    document.getElementById("score").textContent = score;
+    // Show the score and review
+    document.getElementById("score").textContent = `Your Score: ${score} / 20`;
     document.getElementById("review").innerHTML = review.join("");
     document.getElementById("quizForm").classList.add("hidden");
     document.getElementById("result").classList.remove("hidden");
