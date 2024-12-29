@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agriculture Exam Practice</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Agriculture Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Agriculture Exam Practice Questions</h1>
+        <h1>Agriculture Quiz</h1>
+        <div id="quizContainer"></div>
+        
+        <!-- Quiz Form -->
         <form id="quizForm">
-            <div id="questionsContainer"></div>
-            <button type="submit" class="submitBtn">Submit</button>
+            <button type="submit">Submit</button>
         </form>
+
+        <!-- Results Section -->
         <div id="result" class="hidden">
-            <h2>Your Score: <span id="score"></span> / 20</h2>
-            <h3>Review:</h3>
+            <h2>Your Results</h2>
+            <p id="score"></p>
             <div id="review"></div>
-            <button onclick="location.reload()" class="retakeBtn">Retake Quiz</button>
+            <button onclick="location.reload()">Retake Quiz</button>
         </div>
     </div>
 
