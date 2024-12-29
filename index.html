@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Exam Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agriculture Exam Practice Questions</h1>
+        <form id="quizForm">
+            <div id="questionsContainer"></div>
+            <button type="submit" class="submitBtn">Submit</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Your Score: <span id="score"></span> / 20</h2>
+            <h3>Review:</h3>
+            <div id="review"></div>
+            <button onclick="location.reload()" class="retakeBtn">Retake Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
