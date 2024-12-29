@@ -54,7 +54,7 @@ function loadQuiz() {
     shuffleArray(questions);
     const selectedQuestions = questions.slice(0, 20); // Get 20 random questions
 
-    const quizContainer = document.getElementById("questionsContainer");
+    const quizContainer = document.getElementById("quizContainer");
     quizContainer.innerHTML = "";
 
     selectedQuestions.forEach((q, index) => {
